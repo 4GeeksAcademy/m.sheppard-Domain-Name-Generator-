@@ -2,10 +2,12 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+let domain = ["the", "our", "dog", "apples", "car"];
+let end = [".com", ".net", ".org"];
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+let randomDomain = domain[Math.floor(Math.random() * domain.length)];
+let randomEnd = end[Math.floor(Math.random() * end.length)];
+
+let domainName = randomDomain + randomEnd;
+
+console.log("generated domain= " + domainName);
